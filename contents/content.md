@@ -9,4 +9,4 @@ content.mdファイルの内容
 - 適当なリードミー
 - content
 
-[back](./)
+[back](/)

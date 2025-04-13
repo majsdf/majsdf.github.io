@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # このファイルはREADME.mdです
 README.mdファイルの内容
 

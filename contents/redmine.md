@@ -19,7 +19,7 @@ $ su
 $ createuser -P redmine
 $ createdb -E UTF-8 -l ja_JP.UTF-8 -O redmine -T template0 redmine
 ~~~
-# redmine
+## redmine
 ~~~
 # cd /var/lib
 # tar xvpf redmine-6.0.4.tar.gz
@@ -44,7 +44,7 @@ $ createdb -E UTF-8 -l ja_JP.UTF-8 -O redmine -T template0 redmine
 # passenger-install-apache2-module --snippet
 ~~~
 
-# # cat /etc/httpd/conf.d/redmine.conf
+## # cat /etc/httpd/conf.d/redmine.conf
 ~~~
   LoadModule passenger_module /usr/local/share/gems/gems/passenger-6.0.26/buildout/apache2/mod_passenger.so
   <IfModule mod_passenger.c>
@@ -60,13 +60,13 @@ $ createdb -E UTF-8 -l ja_JP.UTF-8 -O redmine -T template0 redmine
     PassengerAppRoot /var/lib/redmine-5.1.7
   </Location>
 ~~~
-# ファイル
+## ファイル
 ~~~
 # cd /var/lib/redmine/public
 # cp -p htaccess.fcgi.example .htaccess
 # cp -p dispatch.fcgi.example dispatch.fcgi
 ~~~
-# フック
+## フック
 ~~~
 # cat /var/opt/git/repository.git/hooks/post-receive
 

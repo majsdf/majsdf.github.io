@@ -2,25 +2,8 @@
 title: トップページ
 ---
 
-# コンテンツ
-項目を並べます
-- [content](./contents/content.html)
-- First list item
-     - First nested list item
+# 目的
 
-- Second `nested` list item
+ナレッジを書き込んで参照
 
 ---
-
-# 第二項目
-もはや`昼下`がり
-- [ご飯炊けた](./README.html)
-~~~
-test
-    teste 
-testest
-~~~
-
-> [!NOTE]  
-> Useful information that users should know, even when skimming content.
-

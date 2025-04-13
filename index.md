@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: ようこそメッセージ！
 ---
 
 # 第一項目

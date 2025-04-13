@@ -1,3 +1,8 @@
+---
+title: redmine
+layout: default
+---
+
 # redmine
 
 ## postgresql

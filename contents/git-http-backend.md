@@ -23,7 +23,7 @@ ScriptAlias /git-http-backend "/usr/libexec/git-core/git-http-backend"
     Allow from all
 </Location>
 ~~~
-# clone
+## clone
 ~~~
 git clone http://redhat94/git-http-backend/document.git
 ~~~

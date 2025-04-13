@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# このファイルはcontent.mdです
+# content.md
 content.mdファイルの内容
 
 ## 見出し２

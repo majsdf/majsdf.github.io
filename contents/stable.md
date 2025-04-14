@@ -1,6 +1,6 @@
 ---
 layout: default
-titel: 画像生成
+titel: stable deffusion
 ---
 
 # stable deffusion

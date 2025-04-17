@@ -3,6 +3,7 @@ layout: default
 ---
 # EventSearch
 
+## イベントビューア
 ~~~powershell
 #XPathフィルター
 $filter=
@@ -16,4 +17,12 @@ $xml=[xml]$Event[0].ToXml()
 
 #出力
 $xml.Event.EventData.Data
+~~~
+
+## 資格情報
+~~~powershell
+$pass = "password" | ConvertTo-SecureString -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential "Administrator",$pass
+
+$cred
 ~~~

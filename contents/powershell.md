@@ -31,8 +31,7 @@ $cred
 
 ## ドメインパスワード変更
 ~~~powershell
-Write-Host "パスワードをリセットします"
-Set-ADAccountPassword -Identity $DomainAccountName -Reset -NewPassword $NewPassword -PassThru -Server 10.1.1.1 -Credential $Cred
+Set-ADAccountPassword -Identity $user -Reset -NewPassword $pass -PassThru -Server 10.1.1.1 -Credential $cred
 ~~~
 
 

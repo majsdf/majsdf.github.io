@@ -16,7 +16,9 @@ $Event=Get-WinEvent -LogName "Microsoft-Windows-TaskScheduler/Operational" -Filt
 $xml=[xml]$Event[0].ToXml()
 
 #出力
-$xml.Event.EventData.Data
+$xml.Event.EventData.Data[0].'#text'
+$xml.Event.EventData.Data[1].'#text'
+$xml.Event.EventData.Data[2].'#text'
 ~~~
 
 ## 資格情報
@@ -26,3 +28,14 @@ $cred = New-Object System.Management.Automation.PSCredential "Administrator",$pa
 
 $cred
 ~~~
+
+## ドメインパスワード変更
+~~~powershell
+Write-Host "パスワードをリセットします"
+Set-ADAccountPassword -Identity $DomainAccountName -Reset -NewPassword $NewPassword -PassThru -Server 10.1.1.1 -Credential $Cred
+~~~
+
+
+
+
+

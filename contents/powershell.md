@@ -35,6 +35,15 @@ Import-Module ActiveDirectory
 Set-ADAccountPassword -Identity $user -Reset -NewPassword $pass -PassThru -Server 10.1.1.1 -Credential $cred
 ~~~
 
+## 引数
+~~~powershell
+Param(
+    [parameter(mandatory=$true)][String]$Account,
+    [parameter(mandatory=$true)][String]$Password
+)
+$Account
+$Password
+~~~
 
 
 

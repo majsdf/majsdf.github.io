@@ -31,6 +31,7 @@ $cred
 
 ## ドメインパスワード変更
 ~~~powershell
+Import-Module ActiveDirectory
 Set-ADAccountPassword -Identity $user -Reset -NewPassword $pass -PassThru -Server 10.1.1.1 -Credential $cred
 ~~~
 

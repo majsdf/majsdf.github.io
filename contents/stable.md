@@ -8,4 +8,10 @@ titel: stable deffusion
 - stable deffusion webuiをgitからcloneする
 - readmeを読んで、バージョンの合うpythonをインストールする
 - `webui-user.bat`を実行
-- エラーメッセージに合わせて修正
+- エラーメッセージに合わせて
+- localization
+- civital
+- 1.4 tagger
+- checkpoint
+- vae
+- easyNegative

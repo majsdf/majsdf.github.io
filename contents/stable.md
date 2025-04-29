@@ -9,9 +9,11 @@ titel: stable deffusion
 - readmeを読んで、バージョンの合うpythonをインストールする
 - `webui-user.bat`を実行
 - エラーメッセージに合わせて
-- localization
-- civital
-- 1.4 tagger
+- extension
+  - localization
+  - civital
+  - 1.4 tagger
+  - controlNet
 - checkpoint
 - vae
 - easyNegative

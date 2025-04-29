@@ -15,3 +15,5 @@ titel: stable deffusion
 - checkpoint
 - vae
 - easyNegative
+- Xformers
+- 

@@ -32,7 +32,7 @@ layout: default
   # grubby --update-kernel=ALL --args="selinux=0"
 ~~~
 ~~~
-  # vi /etc/selinux/config [#p7b72765]
+  # vi /etc/selinux/config
   
   SELINUX=enforcing
 ~~~

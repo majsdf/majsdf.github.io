@@ -4,6 +4,14 @@ layout: default
 ---
 # h2database: h2
 
+## h2コンソールの起動
+
+```
+java -cp h2-1.3.148.jar org.h2.tools.Server -webAllowOthers
+or
+java -jar h2-1.3.148.jar -webAllowOthers
+```
+
 ## ロック中の H2 Database に接続する方法
 
 H2 Database は通常、同時アクセスによる衝突を避けるために単一ユーザーでの書き込みロックをかけます。しかし、既にロックされた状態でも **ファイルロックなし** でデータベースに接続することが可能です。以下に手順を解説します。

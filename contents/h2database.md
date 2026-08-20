@@ -20,9 +20,9 @@ H2 Database は通常、同時アクセスによる衝突を避けるために�
 
 ### JDBC URL の指定
 
-ファイルロックなしで接続するには `FIEL_LOCK=NO` `ACCESS_MODE_DATA=rws` パラメータを使用します。
+ファイルロックなしで接続するには `FIEL_LOCK=NO` `ACCESS_MODE_DATA=rws` `IFEXISTS=TRUE`パラメータを使用します。
 ```java
-String url = "jdbc:h2:/path/to/db;FILE_LOCK=NO;ACCESS_MODE_DATA=rws";
+String url = "jdbc:h2:/path/to/db;FILE_LOCK=NO;ACCESS_MODE_DATA=rws;IFEXISTS=TRUE";
 Connection conn = DriverManager.getConnection(url, "ユーザー名", "パスワード");
 ```
 

@@ -31,3 +31,5 @@ cd /var/lib/tomcat/webapps/gsession
 unzip dba5.5.0_0.zip
 ~~~
 
+---
+classes/connectOption.properties → `AUTO_SERVER=TRUE`

@@ -33,3 +33,12 @@ Connection conn = DriverManager.getConnection(url, "ユーザー名", "パスワ
 ### SQL ツールからの接続
 H2 コンソールや GUI ツールからも同様に接続できます。接続 URL に ;FILE_LOCK=NO;ACCESS_MODE_DATA=rws を追加してください。
 
+### リカバリー
+SQLで出力
+```
+java -cp ../../lib/h2_1.3.jar org.h2.tools.Recover -db database
+```
+dbに変換
+```
+java -cp ../../lib/h2_1.3.jar org.h2.tools.RunScript -url jdbc:h2:./newdb -user user -password password -script ./database.sql
+```

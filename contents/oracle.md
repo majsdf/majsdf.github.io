@@ -35,3 +35,39 @@ COMMENTS
 NLS_DATABASE_PARAMETERS
 Permanent NLS parameters of the database
 ~~~
+
+## 接続
+~~~
+sqlplus / as sysdba
+
+SQL> show con_name
+
+CON_NAME
+------------------------------
+CDB$ROOT
+SQL> show pdbs
+
+    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
+---------- ------------------------------ ---------- ----------
+         2 PDB$SEED                       READ ONLY  NO
+         3 FREEPDB1                       READ WRITE NO
+SQL> alter session set container=freepdb1
+
+セッションが変更されました。
+
+SQL> show con_name
+
+CON_NAME
+------------------------------
+FREEPDB1
+~~~
+`sqlplus USER/PASSWORD@HOTSNAME:1521/FREEPDB1`
+
+## ユーザ作成
+~~~SQL
+CREATE USER ユーザー名 IDENTIFIED BY パスワード
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP;
+ALTER USER ユーザー名 QUOTA UNLIMITED ON USERS;
+GRANT CONNECT, RESOURCE TO ユーザー名;
+~~~

@@ -7,9 +7,9 @@ layout: default
 ## h2コンソールの起動
 
 ```
-java -cp h2-1.3.148.jar org.h2.tools.Server -webAllowOthers
+java -cp h2-1.3.148.jar org.h2.tools.Server -webAllowOthers -ifExists
 or
-java -jar h2-1.3.148.jar -webAllowOthers
+java -jar ../lib/h2_1.3.jar -webAllowOthers -ifExists
 ```
 
 ## ロック中の H2 Database に接続する方法
@@ -20,9 +20,9 @@ H2 Database は通常、同時アクセスによる衝突を避けるために�
 
 ### JDBC URL の指定
 
-ファイルロックなしで接続するには `FIEL_LOCK=NO` `ACCESS_MODE_DATA=rws` `IFEXISTS=TRUE`パラメータを使用します。
+ファイルロックなしで接続するには `FIEL_LOCK=NO` `ACCESS_MODE_DATA=rws`パラメータを使用します。
 ```java
-String url = "jdbc:h2:/path/to/db;FILE_LOCK=NO;ACCESS_MODE_DATA=rws;IFEXISTS=TRUE";
+String url = "jdbc:h2:/path/to/db;FILE_LOCK=NO;ACCESS_MODE_DATA=rws";
 Connection conn = DriverManager.getConnection(url, "ユーザー名", "パスワード");
 ```
 
